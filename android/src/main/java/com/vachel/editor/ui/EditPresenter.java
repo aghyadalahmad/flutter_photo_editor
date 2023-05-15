@@ -440,7 +440,7 @@ public class EditPresenter {
     }
 
     public void onDrawImage(Canvas canvas) {
-        if (mDoodleLayer == null){
+        if (mDoodleLayer == null || mDoodleLayer.isRecycled()){
             return;
         }
         // 裁剪区域
